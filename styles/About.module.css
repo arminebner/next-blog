@@ -11,7 +11,7 @@
 }
 
 .container {
-	padding: 1rem;
+	padding: 0.5rem;
 	border-radius: 3px;
 	text-align: center;
 	background-color: var(--dark-accent);
@@ -21,24 +21,33 @@
 	text-align: left;
 }
 
-.content h1 {
+.content h2 {
 	margin-bottom: 2rem;
 	font-family: var(--font-sec);
 	font-size: 3rem;
 	color: var(--blue);
 }
 
-.portrait {
+.portraitImg {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	margin-bottom: 2rem;
-	border-radius: 50%;
-	box-shadow: 0px 2px 5px #409abf;
 }
-
 .textContent {
+	display: grid;
 }
 
 .textContent p {
 	margin-bottom: 1rem;
+}
+
+.leftColumn {
+	width: 100%;
+}
+
+.rightColumn {
+	width: 100%;
 }
 
 .textContent span {
@@ -81,5 +90,31 @@
 @media screen and (min-width: 1200px) {
 	.jumpSpacer {
 		height: 7rem;
+	}
+
+	.portraitImg {
+		justify-content: flex-start;
+		align-items: center;
+	}
+
+	.textContent {
+		grid-template-columns: repeat(2, 1fr);
+		gap: 5rem;
+	}
+
+	.iconSection {
+		margin-top: 5rem;
+	}
+
+	.leftColumn {
+		padding: 1rem;
+		width: 75%;
+		justify-self: center;
+	}
+
+	.rightColumn {
+		padding: 1rem;
+		width: 75%;
+		justify-self: center;
 	}
 }

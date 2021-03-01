@@ -14,22 +14,37 @@
 }
 
 :root {
-	--bc-color: #242933;
+	--bg-color: #242933;
 	--blue: #409abf;
 	--dark-accent: #141b27;
 	--f-color: #fff;
 	--font-main: 'Lato';
 	--font-sec: 'Monofett';
+	--font-size-desk: 1.25rem;
 }
 
 body {
-	background-color: var(--bc-color);
+	background-color: var(--bg-color);
 	font-family: var(--font-main);
 	color: var(--f-color);
-	line-height: 1.4;
+	line-height: 1.45;
 }
 
 a {
 	color: inherit;
 	text-decoration: none;
+}
+
+.generalSpacer {
+	height: 5rem;
+}
+
+/*
+##############	DESKTOP-VIEW	##############
+*/
+
+@media screen and (min-width: 1200px) {
+	body {
+		font-size: var(--font-size-desk);
+	}
 }

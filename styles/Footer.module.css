@@ -1,0 +1,46 @@
+.footerContainer {
+	height: 100px;
+	width: 100%;
+	margin-bottom: 70px;
+	background-color: var(--dark-accent);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.footerContent {
+	padding: 1rem;
+	font-family: var(--font-sec);
+	font-size: 1.3rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.contact {
+	display: flex;
+	gap: 2rem;
+}
+
+.footnote {
+	font-family: var(--font-sec);
+	font-size: 1.3rem;
+}
+
+/*
+##############  DESKTOP-VIEW    ################
+*/
+
+@media screen and (min-width: 1200px) {
+	.footerContainer {
+		margin-bottom: 0;
+	}
+
+	.footerContent {
+		padding: 1.5rem;
+		width: 30%;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+	}
+}

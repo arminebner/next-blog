@@ -11,7 +11,7 @@
 }
 
 .container {
-	padding: 1rem;
+	padding: 0.5rem;
 	border-radius: 3px;
 	text-align: center;
 	background-color: var(--dark-accent);
@@ -21,7 +21,7 @@
 	text-align: left;
 }
 
-.content h1 {
+.content h2 {
 	margin-bottom: 2rem;
 	font-family: var(--font-sec);
 	font-size: 3rem;
@@ -32,6 +32,40 @@
 	height: 1rem;
 }
 
+.cardContainer {
+	display: grid;
+	gap: 5rem;
+}
+
+.cardContent {
+	width: 100%;
+	text-align: left;
+}
+
+.cardContent h3 {
+	margin: 0rem 0 1rem 0;
+}
+
+.cardContent h4 {
+	margin: 1.5rem 0 0.5rem 0;
+	text-decoration: underline;
+}
+
+.aviateImg {
+	width: 100%;
+	height: 200px;
+	background-image: url(/images/aviate.png);
+	background-size: cover;
+}
+
+.blogImg {
+	width: 100%;
+	height: 200px;
+	background-image: url(/images/blog.png);
+	background-position: center;
+	background-size: cover;
+}
+
 /*
 ################ DESKTOP-VIEW ###############
 */
@@ -39,5 +73,15 @@
 @media screen and (min-width: 1200px) {
 	.jumpSpacer {
 		height: 7rem;
+	}
+
+	.cardContainer {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.cardContent {
+		width: 75%;
+		padding: 1rem;
+		justify-self: center;
 	}
 }
