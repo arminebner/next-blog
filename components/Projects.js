@@ -30,10 +30,11 @@ const Projects = () => {
 								</a>
 								<h4>Tech-Stack:</h4>
 								<p className={styles.techstack}>
-									Frontend: React.js, deployed to Netlify
+									Frontend: React.js <br />
+									Deployed to: Netlify
 									<br />
-									Backend: Node.js/Express.js, deployed to
-									Heroku
+									Backend: Node.js/Express.js <br />
+									Deployed to: Heroku
 								</p>
 							</div>
 							<div className={styles.cardContent}>
@@ -56,13 +57,13 @@ const Projects = () => {
 								</a>
 								<h4>Tech-Stack:</h4>
 								<p className={styles.techstack}>
-									Frontend - Next.js, deployed to my
-									RaspberryPi Nginx Home-Server as a Docker
-									image
+									Frontend: Next.js <br />
+									Deployed to: RaspberryPi Nginx Home-Server
+									as a Docker image
 									<br />
-									Backend - Node.js/Express.js, deployed to my
-									RaspberryPi Nginx Home-Server as a Docker
-									image
+									Backend: Node.js/Express.js, MongoDB <br />
+									Deployed to: RaspberryPi Nginx Home-Server
+									as a Docker image
 								</p>
 							</div>
 						</div>

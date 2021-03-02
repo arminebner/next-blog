@@ -1,0 +1,14 @@
+.container {
+	min-height: 100vh;
+	margin-top: 100px;
+}
+
+.welcomeText {
+	margin-bottom: 2rem;
+}
+
+.welcomeText h1 {
+	font-family: var(--font-sec);
+	color: var(--blue);
+	margin-bottom: 2rem;
+}
