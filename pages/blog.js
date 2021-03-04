@@ -1,7 +1,10 @@
+import { client } from '../client'
 import Posts from '../components/Posts'
 import styles from '../styles/Blog.module.css'
 
 const Blog = ({ posts }) => {
+	console.log(`all posts: ${Array.isArray(posts)}`)
+
 	return (
 		<div className={styles.container}>
 			<div className={styles.welcomeText}>
@@ -21,13 +24,31 @@ const Blog = ({ posts }) => {
 export default Blog
 
 export const getStaticProps = async () => {
-	const res = await fetch('https://content.arminebner.com/posts')
-	const json = await res.json()
-	const posts = json.data
+	try {
+		const res = await client.getEntries({
+			order: 'sys.createdAt',
+		})
 
-	return {
-		props: {
-			posts,
-		},
+		const posts = res.items
+
+		return {
+			props: {
+				posts,
+			},
+		}
+	} catch (e) {
+		console.log(e)
 	}
 }
+
+// export const getStaticProps = async () => {
+// 	const res = await fetch('https://content.arminebner.com/posts')
+// 	const json = await res.json()
+// 	const posts = json.data
+
+// 	return {
+// 		props: {
+// 			posts,
+// 		},
+// 	}
+// }

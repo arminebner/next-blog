@@ -7,31 +7,35 @@ const Posts = ({ posts }) => {
 		<section className={styles.border}>
 			{posts &&
 				posts.map(post => (
-					<div
-						className={styles.container}
-						key={post.slug}
-						id='post.sys.id'>
-						<Link href='/post/[slug]' as={`/post/${post.slug}`}>
+					<div className={styles.container} key={post.fields.slug}>
+						<Link
+							href='/post/[slug]'
+							as={`/post/${post.fields.slug}`}>
 							<div className={styles.previewImageContainer}>
 								<Image
 									className={styles.previewImage}
-									src={post.mobileHeaderImagePath}
+									src={`https:${post.fields.headerImage.fields.file.url}`}
 									layout='fill'
+									priority
 								/>
 							</div>
 						</Link>
 						<div className={styles.postText}>
-							<Link href='/post/[slug]' as={`/post/${post.slug}`}>
+							<Link
+								href='/post/[slug]'
+								as={`/post/${post.fields.slug}`}>
 								<h2 className={styles.postTitle}>
-									{post.title}
+									{post.fields.title}
 								</h2>
 							</Link>
 							<p
 								className={styles.postExcerpt}
 								dangerouslySetInnerHTML={{
-									__html: post.short_description,
+									__html: post.fields.short,
 								}}></p>
-							<Link href='/post/[slug]' as={`/post/${post.slug}`}>
+							<Link
+								href='/post/[slug]'
+								as={`/post/${post.fields.slug}`}>
 								<p className={styles.readMore}>read more</p>
 							</Link>
 						</div>

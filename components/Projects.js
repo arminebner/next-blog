@@ -22,8 +22,10 @@ const Projects = () => {
 									Explore the skies around you or anywhere in
 									the world.
 									<br />
-									It is a work in Progress and my lovechild -
-									so stay tuned for updates and new features!
+									It is a work in Progress and the lovechild
+									of my passion for both aviation and
+									programming - so stay tuned for updates and
+									new features!
 								</p>
 								<a href='https://aviate.live'>
 									&rarr; Link to: live-website
