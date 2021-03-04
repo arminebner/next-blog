@@ -4,8 +4,6 @@ import ReactMarkdown from 'react-markdown'
 import styles from '../../../styles/SinglePost.module.css'
 
 const SinglePost = ({ post }) => {
-	console.log(`post from props: ${Array.isArray(post.posts)}`)
-
 	return (
 		<section className={styles.container}>
 			<div className={styles.headerImage}>
@@ -22,99 +20,64 @@ const SinglePost = ({ post }) => {
 					<p>{`from: ${post.fields.author}`}</p>
 					<p>{`published: ${new Date(post.sys.createdAt)}`}</p>
 					<p>
-						{post.last_updated
-							? `last updated: ${new Date(post.sys.updatedAt)}`
-							: ''}
+						{post.last_updated &&
+							`last updated: ${new Date(post.sys.updatedAt)}`}
 					</p>
 				</div>
-				<div
-					className={styles.postContent}
-					dangerouslySetInnerHTML={{
-						__html: post.fields.markdown1,
-					}}
-				/>
-				{post.fields.image1 ? (
+				<div className={styles.postContent}>
+					<ReactMarkdown>{post.fields.markdown1}</ReactMarkdown>
+				</div>
+				{post.fields.image1 && (
 					<Image
 						src={`https:${post.fields.image1.fields.file.url}`}
 						layout='intrinsic'
 						width={900}
 						height={600}
 					/>
-				) : (
-					''
 				)}
-				{post.fields.markdown2 ? (
-					<div
-						className={styles.postContent}
-						dangerouslySetInnerHTML={{
-							__html: post.fields.markdown2,
-						}}
-					/>
-				) : (
-					``
+				{post.fields.markdown2 && (
+					<div className={styles.postContent}>
+						<ReactMarkdown>{post.fields.markdown2}</ReactMarkdown>
+					</div>
 				)}
-				{post.fields.image2 ? (
+				{post.fields.image2 && (
 					<Image
 						src={`https:${post.fields.image2.fields.file.url}`}
 						layout='intrinsic'
 						width={900}
 						height={600}
 					/>
-				) : (
-					''
 				)}
-
-				{post.fields.markdown3 ? (
-					<div
-						className={styles.postContent}
-						dangerouslySetInnerHTML={{
-							__html: post.fields.markdown3,
-						}}
-					/>
-				) : (
-					``
+				{post.fields.markdown3 && (
+					<div className={styles.postContent}>
+						<ReactMarkdown>{post.fields.markdown3}</ReactMarkdown>
+					</div>
 				)}
-				{post.fields.image3 ? (
+				{post.fields.image3 && (
 					<Image
 						src={`https:${post.fields.image3.fields.file.url}`}
 						layout='intrinsic'
 						width={900}
 						height={600}
 					/>
-				) : (
-					''
 				)}
-
-				{post.fields.markdown4 ? (
-					<div
-						className={styles.postContent}
-						dangerouslySetInnerHTML={{
-							__html: post.fields.markdown4,
-						}}
-					/>
-				) : (
-					``
+				{post.fields.markdown4 && (
+					<div className={styles.postContent}>
+						<ReactMarkdown>{post.fields.markdown4}</ReactMarkdown>
+					</div>
 				)}
-				{post.fields.image4 ? (
+				{post.fields.image4 && (
 					<Image
 						src={`https:${post.fields.image4.fields.file.url}`}
 						layout='intrinsic'
 						width={900}
 						height={600}
 					/>
-				) : (
-					''
 				)}
-
-				{post.fields.markdown5 ? (
-					<div
-						className={styles.postContent}
-						dangerouslySetInnerHTML={{
-							__html: post.fields.markdown5,
-						}}
-					/>
-				) : (
-					``
+				{post.fields.markdown5 && (
+					<div className={styles.postContent}>
+						<ReactMarkdown>{post.fields.markdown5}</ReactMarkdown>
+					</div>
 				)}
 			</div>
 		</section>

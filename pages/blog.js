@@ -3,8 +3,6 @@ import Posts from '../components/Posts'
 import styles from '../styles/Blog.module.css'
 
 const Blog = ({ posts }) => {
-	console.log(`all posts: ${Array.isArray(posts)}`)
-
 	return (
 		<div className={styles.container}>
 			<div className={styles.welcomeText}>
