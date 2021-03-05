@@ -26,6 +26,8 @@
 .postText h1 {
 	margin: 1rem 0 1rem 0.5rem;
 	padding-left: 1rem;
+	font-family: 'DotGothic';
+	font-size: 3rem;
 }
 
 .postMeta {

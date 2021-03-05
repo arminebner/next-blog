@@ -1,86 +1,116 @@
 import Image from 'next/image'
+import { NextSeo } from 'next-seo'
 import { client } from '../../../client'
 import ReactMarkdown from 'react-markdown'
 import styles from '../../../styles/SinglePost.module.css'
 
 const SinglePost = ({ post }) => {
+	const seo = {
+		title: post.fields.title,
+		description: post.fields.short,
+		openGraph: {
+			url: `https://www.arminebner.com/post/${post.fields.slug}`,
+			title: post.fields.title,
+			description: post.fields.short,
+			images: [
+				{
+					url: post.fields.headerImage.fields.file.url,
+					width: 800,
+					height: 600,
+					alt: 'Og Image Alt',
+				},
+			],
+		},
+	}
+
 	return (
-		<section className={styles.container}>
-			<div className={styles.headerImage}>
-				<Image
-					src={`https:${post.fields.headerImage.fields.file.url}`}
-					layout='fill'
-					objectFit='cover'
-					priority
-				/>
-			</div>
-			<div className={styles.postText}>
-				<h1>{post.fields.title}</h1>
-				<div className={styles.postMeta}>
-					<p>{`from: ${post.fields.author}`}</p>
-					<p>{`published: ${new Date(post.sys.createdAt)}`}</p>
-					<p>
-						{post.last_updated &&
-							`last updated: ${new Date(post.sys.updatedAt)}`}
-					</p>
+		<>
+			<NextSeo {...seo} />
+			<section className={styles.container}>
+				<div className={styles.headerImage}>
+					<Image
+						src={`https:${post.fields.headerImage.fields.file.url}`}
+						layout='fill'
+						objectFit='cover'
+						priority
+					/>
 				</div>
-				<div className={styles.postContent}>
-					<ReactMarkdown>{post.fields.markdown1}</ReactMarkdown>
+				<div className={styles.postText}>
+					<h1>{post.fields.title}</h1>
+					<div className={styles.postMeta}>
+						<p>{`from: ${post.fields.author}`}</p>
+						<p>{`published: ${new Date(post.sys.createdAt)}`}</p>
+						<p>
+							{post.last_updated &&
+								`last updated: ${new Date(post.sys.updatedAt)}`}
+						</p>
+					</div>
+					<div className={styles.postContent}>
+						<ReactMarkdown>{post.fields.markdown1}</ReactMarkdown>
+					</div>
+					{post.fields.image1 && (
+						<Image
+							src={`https:${post.fields.image1.fields.file.url}`}
+							layout='intrinsic'
+							width={900}
+							height={600}
+						/>
+					)}
+					{post.fields.markdown2 && (
+						<div className={styles.postContent}>
+							<ReactMarkdown>
+								{post.fields.markdown2}
+							</ReactMarkdown>
+						</div>
+					)}
+					{post.fields.image2 && (
+						<Image
+							src={`https:${post.fields.image2.fields.file.url}`}
+							layout='intrinsic'
+							width={900}
+							height={600}
+						/>
+					)}
+					{post.fields.markdown3 && (
+						<div className={styles.postContent}>
+							<ReactMarkdown>
+								{post.fields.markdown3}
+							</ReactMarkdown>
+						</div>
+					)}
+					{post.fields.image3 && (
+						<Image
+							src={`https:${post.fields.image3.fields.file.url}`}
+							layout='intrinsic'
+							width={900}
+							height={600}
+						/>
+					)}
+					{post.fields.markdown4 && (
+						<div className={styles.postContent}>
+							<ReactMarkdown>
+								{post.fields.markdown4}
+							</ReactMarkdown>
+						</div>
+					)}
+					{post.fields.image4 && (
+						<Image
+							src={`https:${post.fields.image4.fields.file.url}`}
+							layout='intrinsic'
+							width={900}
+							height={600}
+						/>
+					)}
+					{post.fields.markdown5 && (
+						<div className={styles.postContent}>
+							<ReactMarkdown>
+								{post.fields.markdown5}
+							</ReactMarkdown>
+						</div>
+					)}
 				</div>
-				{post.fields.image1 && (
-					<Image
-						src={`https:${post.fields.image1.fields.file.url}`}
-						layout='intrinsic'
-						width={900}
-						height={600}
-					/>
-				)}
-				{post.fields.markdown2 && (
-					<div className={styles.postContent}>
-						<ReactMarkdown>{post.fields.markdown2}</ReactMarkdown>
-					</div>
-				)}
-				{post.fields.image2 && (
-					<Image
-						src={`https:${post.fields.image2.fields.file.url}`}
-						layout='intrinsic'
-						width={900}
-						height={600}
-					/>
-				)}
-				{post.fields.markdown3 && (
-					<div className={styles.postContent}>
-						<ReactMarkdown>{post.fields.markdown3}</ReactMarkdown>
-					</div>
-				)}
-				{post.fields.image3 && (
-					<Image
-						src={`https:${post.fields.image3.fields.file.url}`}
-						layout='intrinsic'
-						width={900}
-						height={600}
-					/>
-				)}
-				{post.fields.markdown4 && (
-					<div className={styles.postContent}>
-						<ReactMarkdown>{post.fields.markdown4}</ReactMarkdown>
-					</div>
-				)}
-				{post.fields.image4 && (
-					<Image
-						src={`https:${post.fields.image4.fields.file.url}`}
-						layout='intrinsic'
-						width={900}
-						height={600}
-					/>
-				)}
-				{post.fields.markdown5 && (
-					<div className={styles.postContent}>
-						<ReactMarkdown>{post.fields.markdown5}</ReactMarkdown>
-					</div>
-				)}
-			</div>
-		</section>
+			</section>
+		</>
 	)
 }
 
@@ -105,20 +135,6 @@ export const getStaticProps = async context => {
 		console.log(e)
 	}
 }
-
-// export const getStaticProps = async context => {
-// 	const res = await fetch(
-// 		`https://content.arminebner.com/posts/${context.params.slug}`
-// 	)
-// 	const json = await res.json()
-// 	const post = json.data[0]
-
-// 	return {
-// 		props: {
-// 			post,
-// 		},
-// 	}
-// }
 
 export const getStaticPaths = async () => {
 	try {

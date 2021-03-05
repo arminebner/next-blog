@@ -6,8 +6,64 @@
 	align-items: center;
 }
 
-.container h1 {
+.upper {
+	height: 50vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+.welcome {
 	font-family: var(--font-sec);
 	color: var(--blue);
+	font-size: 2rem;
+	font-weight: bold;
+}
+
+.arminebner {
 	font-size: 2.5rem;
+}
+
+.space {
+	text-align: center;
+}
+
+.lower {
+	height: 50vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-end;
+	margin-bottom: 2rem;
+}
+
+.scroll {
+	animation: updown 1.5s infinite ease-in-out;
+}
+
+@keyframes updown {
+	0% {
+		transform: translateY(0);
+	}
+	50% {
+		transform: translateY(5px);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
+
+@media (min-width: 1200px) {
+	.welcome {
+		font-size: 3.5rem;
+	}
+
+	.arminebner {
+		font-size: 4.5rem;
+	}
+
+	.lower {
+		margin-top: 5rem;
+	}
 }

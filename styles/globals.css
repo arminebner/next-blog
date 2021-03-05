@@ -3,8 +3,12 @@
 	src: url('../fonts/Lato/Lato-Light.ttf');
 }
 @font-face {
-	font-family: 'Monofett';
-	src: url('../fonts/Monofett/Monofett-Regular.ttf');
+	font-family: 'DotGothic';
+	src: url('../fonts/DotGothic/DotGothic16-Regular.ttf');
+}
+@font-face {
+	font-family: 'DankMono';
+	src: url('../fonts/DankMono/DankMono-Regular.woff2');
 }
 
 * {
@@ -18,8 +22,8 @@
 	--blue: #409abf;
 	--dark-accent: #141b27;
 	--f-color: #fff;
-	--font-main: 'Lato';
-	--font-sec: 'Monofett';
+	--font-main: 'DankMono';
+	--font-sec: 'DotGothic';
 	--font-size-desk: 1.25rem;
 }
 

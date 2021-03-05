@@ -7,10 +7,8 @@ const Posts = ({ posts }) => {
 		<>
 			{posts &&
 				posts.map(post => (
-					<section className={styles.border}>
-						<div
-							className={styles.container}
-							key={post.fields.slug}>
+					<section className={styles.border} key={post.fields.slug}>
+						<div className={styles.container}>
 							<Link
 								href='/post/[slug]'
 								as={`/post/${post.fields.slug}`}>

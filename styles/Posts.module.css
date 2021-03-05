@@ -44,6 +44,7 @@
 	margin-bottom: 1rem;
 	color: var(--f-color);
 	cursor: pointer;
+	font-family: 'DotGothic';
 }
 
 .postExcerpt {
