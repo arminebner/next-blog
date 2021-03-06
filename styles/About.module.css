@@ -1,3 +1,10 @@
+.aboutH2 {
+	margin-bottom: 2rem;
+	font-family: var(--font-sec);
+	font-size: 3rem;
+	color: var(--blue);
+}
+
 .border {
 	padding: 1px;
 	background: rgb(238, 174, 202);
@@ -19,13 +26,6 @@
 
 .content {
 	text-align: left;
-}
-
-.content h2 {
-	margin-bottom: 2rem;
-	font-family: var(--font-sec);
-	font-size: 3rem;
-	color: var(--blue);
 }
 
 .portraitImg {

@@ -1,0 +1,236 @@
+.arminebner {
+	font-size: 1.5rem;
+	display: flex;
+	gap: 2px;
+	color: #fff;
+	font-family: var(--font-sec);
+	animation: main 0.5s;
+}
+
+.letterA {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	background-color: #1572b6;
+	width: 40px;
+	height: 40px;
+}
+
+.letterR {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	background-color: #fcc624;
+	width: 40px;
+	height: 40px;
+}
+
+.letterM {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	background-color: #e34f26;
+	width: 40px;
+	height: 40px;
+}
+
+.letterI {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	background-color: #339933;
+	width: 40px;
+	height: 40px;
+}
+
+.letterN {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	background-color: #c51a4a;
+	width: 40px;
+	height: 40px;
+}
+
+.letterE {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	background-color: #f7df1e;
+	width: 40px;
+	height: 40px;
+}
+
+.letterB {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	background-color: #00c7b7;
+	width: 40px;
+	height: 40px;
+}
+
+.letterN2 {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	background-color: #000000;
+	width: 40px;
+	height: 40px;
+}
+
+.letterE2 {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	background-color: #61dafb;
+	width: 40px;
+	height: 40px;
+}
+
+.letterR2 {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	background-color: #440098;
+	width: 40px;
+	height: 40px;
+}
+
+.letterDot {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	background-color: #48b9c7;
+	width: 40px;
+	height: 40px;
+}
+
+.letterC {
+	display: flex;
+	background-color: var(--blue);
+	justify-content: center;
+	align-items: flex-start;
+	background-color: #f05032;
+	width: 40px;
+	height: 40px;
+}
+
+.letterO {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	background-color: #2496ed;
+	width: 40px;
+	height: 40px;
+}
+
+.letterM2 {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	background-color: #47a248;
+	width: 40px;
+	height: 40px;
+}
+
+@keyframes main {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+@media (min-width: 1200px) {
+	.arminebner {
+		font-size: 4rem;
+		color: var(--bg-color);
+	}
+
+	.letterA {
+		width: 70px;
+		height: 70px;
+		align-items: flex-end;
+	}
+
+	.letterR {
+		width: 70px;
+		height: 70px;
+		align-items: flex-end;
+	}
+
+	.letterM {
+		width: 70px;
+		height: 70px;
+		align-items: flex-end;
+	}
+
+	.letterI {
+		width: 70px;
+		height: 70px;
+		align-items: flex-end;
+	}
+
+	.letterN {
+		width: 70px;
+		height: 70px;
+		align-items: flex-end;
+	}
+
+	.letterE {
+		width: 70px;
+		height: 70px;
+		align-items: flex-end;
+	}
+
+	.letterB {
+		width: 70px;
+		height: 70px;
+		align-items: flex-end;
+	}
+
+	.letterN2 {
+		width: 70px;
+		height: 70px;
+		align-items: flex-end;
+	}
+
+	.letterE2 {
+		width: 70px;
+		height: 70px;
+		align-items: flex-end;
+	}
+
+	.letterR2 {
+		width: 70px;
+		height: 70px;
+		align-items: flex-end;
+	}
+
+	.letterDot {
+		width: 70px;
+		height: 70px;
+		align-items: flex-end;
+	}
+
+	.letterC {
+		width: 70px;
+		height: 70px;
+		align-items: flex-end;
+	}
+
+	.letterO {
+		width: 70px;
+		height: 70px;
+		align-items: flex-end;
+	}
+
+	.letterM2 {
+		width: 70px;
+		height: 70px;
+		align-items: flex-end;
+	}
+}

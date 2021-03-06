@@ -3,11 +3,21 @@ import styles from '../styles/Projects.module.css'
 const Projects = () => {
 	return (
 		<>
-			<div className={styles.jumpSpacer} id='projects'></div>
+			<h2 className={styles.projectsH2}>Projects</h2>
+			<div className={styles.description}>
+				<p>
+					Here is the place to check out the projects I have been
+					working on or worked on in the past:
+				</p>
+				<p>
+					I want to give you information about the project and the
+					used Tech-Stack.
+				</p>
+				<p>Some are live-websites you can visit right now.</p>
+			</div>
 			<div className={styles.border}>
 				<section className={styles.container}>
 					<div className={styles.content}>
-						<h2>Projects</h2>
 						<div className={styles.cardContainer}>
 							<div className={styles.cardContent}>
 								<h3>Aviate.live</h3>

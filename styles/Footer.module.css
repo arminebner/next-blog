@@ -1,7 +1,7 @@
 .footerContainer {
+	margin-top: 5rem;
 	height: 100px;
 	width: 100%;
-	margin-bottom: 70px;
 	background-color: var(--dark-accent);
 	display: flex;
 	flex-direction: column;
@@ -34,7 +34,7 @@
 
 @media screen and (min-width: 1200px) {
 	.footerContainer {
-		margin-bottom: 0;
+		margin-top: 10rem;
 	}
 
 	.footerContent {

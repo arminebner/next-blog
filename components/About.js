@@ -4,11 +4,10 @@ import styles from '../styles/About.module.css'
 const About = () => {
 	return (
 		<>
-			<div className={styles.jumpSpacer} id='about'></div>
+			<h2 className={styles.aboutH2}>About me and this page</h2>
 			<div className={styles.border}>
 				<section className={styles.container}>
 					<div className={styles.content}>
-						<h2>About me and this page</h2>
 						<div className={styles.textContent}>
 							<div className={styles.leftColumn}>
 								<div className={styles.portraitImg}>

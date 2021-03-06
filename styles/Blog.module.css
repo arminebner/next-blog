@@ -1,14 +1,24 @@
 .container {
-	min-height: 100vh;
-	margin-top: 100px;
+	margin-top: 5rem;
 }
 
 .welcomeText {
-	margin-bottom: 2rem;
+	margin-bottom: 3rem;
 }
 
 .welcomeText h1 {
 	font-family: var(--font-sec);
 	color: var(--blue);
+	font-size: 3rem;
 	margin-bottom: 2rem;
+}
+
+/*
+############	MOBILE-VIEW	###########
+*/
+
+@media (min-width: 1200px) {
+	.welcomeText {
+		margin-bottom: 5rem;
+	}
 }

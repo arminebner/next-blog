@@ -7,7 +7,6 @@ const Home = () => {
 			<Header />
 			<div className='generalSpacer'></div>
 			<About />
-			<div className='generalSpacer'></div>
 		</>
 	)
 }
