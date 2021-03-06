@@ -31,7 +31,6 @@ const Header = () => {
 						Web-Technologies<br></br>Linux<br></br>etc
 					</p>
 				</div>
-
 				<div className={styles.scroll}>
 					<Image
 						src='/icons/scroll.svg'

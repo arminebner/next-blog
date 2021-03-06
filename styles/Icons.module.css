@@ -71,14 +71,14 @@
 	animation-fill-mode: forwards;
 }
 
-.js {
+.heroku {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-color: #f7df1e;
+	background-color: #430098;
 	width: 40px;
 	height: 40px;
-	animation: drop 1s 1.5s;
+	animation: drop 1s 2.25s;
 	transform: translateY(-50vh);
 	animation-fill-mode: forwards;
 }
@@ -119,14 +119,14 @@
 	animation-fill-mode: forwards;
 }
 
-.heroku {
+.js {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-color: #430098;
+	background-color: #f7df1e;
 	width: 40px;
 	height: 40px;
-	animation: drop 1s 2.25s;
+	animation: drop 1s 1.5s;
 	transform: translateY(-50vh);
 	animation-fill-mode: forwards;
 }

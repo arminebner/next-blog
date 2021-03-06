@@ -9,7 +9,7 @@
 .welcomeText h1 {
 	font-family: var(--font-sec);
 	color: var(--blue);
-	font-size: 3rem;
+	font-size: 2rem;
 	margin-bottom: 2rem;
 }
 
@@ -20,5 +20,9 @@
 @media (min-width: 1200px) {
 	.welcomeText {
 		margin-bottom: 5rem;
+	}
+
+	.welcomeText h1 {
+		font-size: 3rem;
 	}
 }

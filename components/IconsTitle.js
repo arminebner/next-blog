@@ -41,11 +41,11 @@ const Icons = () => {
 				</div>
 			</div>
 			<div className={styles.icons}>
-				<div className={styles.js}>
+				<div className={styles.heroku}>
 					<img
 						className={styles.icon}
-						src='/icons/javascript-dark.svg'
-						alt='javascript icon'
+						src='/icons/heroku.svg'
+						alt='heroku icon'
 					/>
 				</div>
 				<div className={styles.netlify}>
@@ -69,11 +69,11 @@ const Icons = () => {
 						alt='react icon'
 					/>
 				</div>
-				<div className={styles.heroku}>
+				<div className={styles.js}>
 					<img
 						className={styles.icon}
-						src='/icons/heroku.svg'
-						alt='heroku icon'
+						src='/icons/javascript-dark.svg'
+						alt='javascript icon'
 					/>
 				</div>
 			</div>

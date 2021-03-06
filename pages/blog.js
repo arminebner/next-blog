@@ -25,11 +25,12 @@ const Blog = ({ posts }) => {
 					<p>Here is the place to read about my favorite topics:</p>
 					<p>
 						Web-Development, Linux and Tech-related topics in
-						general
+						general.
 					</p>
+					<br></br>
 					<p>
-						Have fun and feel free to get in touch if you have any
-						questions
+						Enjoy and feel free to get in touch if you have any
+						questions! :)
 					</p>
 				</div>
 				<Posts posts={posts} />
