@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import {
 	LinkedinShareButton,
 	TelegramShareButton,
@@ -15,10 +14,9 @@ const Sharer = props => {
 				<div className={styles.twitterBox}>
 					<TwitterShareButton
 						url={`https://www.arminebner.com/post/${slug}`}>
-						<Image
+						<img
+							style={{ width: '30px', height: '30px' }}
 							src='/icons/twitter.svg'
-							width={30}
-							height={30}
 							alt='twitter'
 						/>
 					</TwitterShareButton>
@@ -35,7 +33,8 @@ const Sharer = props => {
 						title={title}
 						summary={short}
 						source={'arminebner.com'}>
-						<Image
+						<img
+							style={{ width: '30px', height: '30px' }}
 							src='/icons/linkedin-sharer.svg'
 							width={30}
 							height={30}
@@ -58,7 +57,8 @@ const Sharer = props => {
 				<div className={styles.telegramBox}>
 					<TelegramShareButton
 						url={`https://www.arminebner.com/post/${slug}`}>
-						<Image
+						<img
+							style={{ width: '30px', height: '30px' }}
 							src='/icons/telegram.svg'
 							width={30}
 							height={30}
