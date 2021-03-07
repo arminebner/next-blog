@@ -70,6 +70,14 @@
 	background-size: cover;
 }
 
+.pbImg {
+	width: 100%;
+	height: 200px;
+	background-image: url(/images/pb.png);
+	background-position: top;
+	background-size: cover;
+}
+
 /*
 ################ DESKTOP-VIEW ###############
 */
@@ -94,17 +102,14 @@
 	}
 
 	.aviateImg {
-		width: 100%;
-		height: 400px;
-		background-image: url(/images/aviate.png);
-		background-size: cover;
+		height: 500px;
 	}
 
 	.blogImg {
-		width: 100%;
-		height: 400px;
-		background-image: url(/images/blog.png);
-		background-position: center;
-		background-size: cover;
+		height: 500px;
+	}
+
+	.pbImg {
+		height: 500px;
 	}
 }

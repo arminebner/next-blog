@@ -34,6 +34,7 @@
 	background-color: #1572b6;
 	width: 40px;
 	height: 40px;
+	animation: colorChangerA 300s infinite;
 }
 
 .letterE {
@@ -43,6 +44,7 @@
 	background-color: #440098;
 	width: 40px;
 	height: 40px;
+	animation: colorChangerE 300s reverse infinite;
 }
 
 .navUl {
@@ -56,9 +58,105 @@
 
 .navLi {
 	padding: 0.5rem 1rem 0.5rem 1rem;
-	font-size: 1.5rem;
+	font-size: 1rem;
 }
 
 .navLi:hover {
 	color: var(--blue);
+}
+
+@keyframes colorChangerA {
+	7% {
+		background-color: #1572b6;
+	}
+	14% {
+		background-color: #fcc624;
+	}
+	21% {
+		background-color: #e34f26;
+	}
+	28% {
+		background-color: #339933;
+	}
+	35% {
+		background-color: #c51a4a;
+	}
+	42% {
+		background-color: #430098;
+	}
+	49% {
+		background-color: #00c7b7;
+	}
+	56% {
+		background-color: #000000;
+	}
+	64% {
+		background-color: #61dafb;
+	}
+	70% {
+		background-color: #f7df1e;
+	}
+	77% {
+		background-color: #48b9c7;
+	}
+	84% {
+		background-color: #f05032;
+	}
+	91% {
+		background-color: #2496ed;
+	}
+	100% {
+		background-color: #47a248;
+	}
+}
+
+@keyframes colorChangerE {
+	7% {
+		background-color: #47a248;
+	}
+	14% {
+		background-color: #fcc624;
+	}
+	21% {
+		background-color: #e34f26;
+	}
+	28% {
+		background-color: #339933;
+	}
+	35% {
+		background-color: #c51a4a;
+	}
+	42% {
+		background-color: #1572b6;
+	}
+	49% {
+		background-color: #00c7b7;
+	}
+	56% {
+		background-color: #000000;
+	}
+	64% {
+		background-color: #61dafb;
+	}
+	70% {
+		background-color: #f7df1e;
+	}
+	77% {
+		background-color: #48b9c7;
+	}
+	84% {
+		background-color: #f05032;
+	}
+	91% {
+		background-color: #2496ed;
+	}
+	100% {
+		background-color: #430098;
+	}
+}
+
+@media (min-width: 1200px) {
+	.navLi {
+		font-size: 1.5rem;
+	}
 }

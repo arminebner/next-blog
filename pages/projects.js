@@ -37,12 +37,12 @@ const Projects = () => {
 							tuned for updates and new features!
 						</p>
 						<a className={styles.link} href='https://aviate.live'>
-							&rarr; Link to: live-website
+							&rarr; Link to: Live-Website
 						</a>
 						<h4>Tech-Stack:</h4>
 						<p className={styles.techstack}>
 							Frontend: React.js <br />
-							Deployed to: Netlify
+							Deployed to: GitHub-Pages
 							<br />
 							Backend: Node.js/Express.js <br />
 							Deployed to: Heroku
@@ -81,6 +81,41 @@ const Projects = () => {
 							Backend: Node.js/Express.js, MongoDB <br />
 							Deployed to: RaspberryPi Nginx Home-Server as a
 							Docker image
+						</p>
+					</div>
+				</div>
+			</div>
+			<div className={styles.border}>
+				<div className={styles.container}>
+					<div className={styles.content}>
+						<h3>&rarr; Prumbaum-Lagerverkauf &larr;</h3>
+						<a href='https://www.prumbaum-lagerverkauf.de/'>
+							<div className={styles.pbImg}></div>
+						</a>
+						<h4>Description:</h4>
+						<p className={styles.description}>
+							My first experience with WordPress in a production
+							environment.
+							<br />
+							<br></br>
+							I build this Site during the first Covid-19
+							lockdown-phase in early 2020 to support a sales
+							branch that before only existed locally and would
+							otherwise have not been able to make ongoing profit.
+							And that in a time of rapidly increasing demand.
+							<br />
+						</p>
+						<a
+							className={styles.link}
+							href='https://www.prumbaum-lagerverkauf.de/'>
+							&rarr; Link to: Live-Site
+						</a>
+						<h4>Tech-Stack:</h4>
+						<p className={styles.techstack}>
+							WordPress Catalogue-Site with a self-made theme and
+							some minor adjustments in functions and plugins.
+							Including backups and GDPR-compliance for
+							Google-Analytics-tracking.
 						</p>
 					</div>
 				</div>

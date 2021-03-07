@@ -1,7 +1,9 @@
 import Image from 'next/image'
+import { useState, useEffect } from 'react'
 import { NextSeo } from 'next-seo'
 import { client } from '../../../client'
 import ReactMarkdown from 'react-markdown'
+import Sharer from '../../../components/Sharer'
 import styles from '../../../styles/SinglePost.module.css'
 
 const SinglePost = ({ post }) => {
@@ -22,6 +24,12 @@ const SinglePost = ({ post }) => {
 			],
 		},
 	}
+
+	const [showSharer, setShowSharer] = useState(false)
+
+	useEffect(() => {
+		setShowSharer(true)
+	}, [])
 
 	return (
 		<>
@@ -110,6 +118,13 @@ const SinglePost = ({ post }) => {
 					)}
 				</div>
 			</section>
+			{showSharer && (
+				<Sharer
+					title={post.fields.title}
+					short={post.fields.short}
+					slug={post.fields.slug}
+				/>
+			)}
 		</>
 	)
 }
@@ -124,7 +139,6 @@ export const getStaticProps = async context => {
 		})
 
 		const post = res.items[0]
-		console.log(`single-post: ${post}`)
 
 		return {
 			props: {
