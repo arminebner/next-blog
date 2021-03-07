@@ -15,7 +15,7 @@ const SinglePost = ({ post }) => {
 			description: post.fields.short,
 			images: [
 				{
-					url: post.fields.headerImage.fields.file.url,
+					url: `https:${post.fields.headerImage.fields.file.url}`,
 					width: 800,
 					height: 600,
 					alt: 'Og Image Alt',

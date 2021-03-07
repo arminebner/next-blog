@@ -9,7 +9,7 @@ export default {
 			'a space for web-technologies and linux, for my blog and portfolio',
 		images: [
 			{
-				url: 'https://www.example.ie/og-image-01.jpg',
+				url: '/images/blog.png',
 				width: 800,
 				height: 600,
 				alt: 'Og Image Alt',
