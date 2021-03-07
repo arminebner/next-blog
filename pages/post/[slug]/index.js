@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import { useState, useEffect } from 'react'
 import { NextSeo } from 'next-seo'
 import { client } from '../../../client'
@@ -36,11 +35,8 @@ const SinglePost = ({ post }) => {
 			<NextSeo {...seo} />
 			<section className={styles.container}>
 				<div className={styles.headerImage}>
-					<Image
+					<img
 						src={`https:${post.fields.headerImage.fields.file.url}`}
-						layout='fill'
-						objectFit='cover'
-						priority
 					/>
 				</div>
 				<div className={styles.postText}>
@@ -57,11 +53,9 @@ const SinglePost = ({ post }) => {
 						<ReactMarkdown>{post.fields.markdown1}</ReactMarkdown>
 					</div>
 					{post.fields.image1 && (
-						<Image
+						<img
 							src={`https:${post.fields.image1.fields.file.url}`}
-							layout='intrinsic'
-							width={900}
-							height={600}
+							style={{ width: '100%' }}
 						/>
 					)}
 					{post.fields.markdown2 && (
@@ -72,11 +66,9 @@ const SinglePost = ({ post }) => {
 						</div>
 					)}
 					{post.fields.image2 && (
-						<Image
+						<img
 							src={`https:${post.fields.image2.fields.file.url}`}
-							layout='intrinsic'
-							width={900}
-							height={600}
+							style={{ width: '100%' }}
 						/>
 					)}
 					{post.fields.markdown3 && (
@@ -87,11 +79,9 @@ const SinglePost = ({ post }) => {
 						</div>
 					)}
 					{post.fields.image3 && (
-						<Image
+						<img
 							src={`https:${post.fields.image3.fields.file.url}`}
-							layout='intrinsic'
-							width={900}
-							height={600}
+							style={{ width: '100%' }}
 						/>
 					)}
 					{post.fields.markdown4 && (
@@ -102,11 +92,9 @@ const SinglePost = ({ post }) => {
 						</div>
 					)}
 					{post.fields.image4 && (
-						<Image
+						<img
 							src={`https:${post.fields.image4.fields.file.url}`}
-							layout='intrinsic'
-							width={900}
-							height={600}
+							style={{ width: '100%' }}
 						/>
 					)}
 					{post.fields.markdown5 && (

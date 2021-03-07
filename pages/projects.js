@@ -1,8 +1,22 @@
+import { NextSeo } from 'next-seo'
 import styles from '../styles/Projects.module.css'
 
 const Projects = () => {
+	const seo = {
+		title: 'Projects',
+		description:
+			'An Overview of the projects i have been workin on or worked on in the past',
+		openGraph: {
+			url: 'https://www.arminebner.com/projects',
+			title: 'blog',
+			description:
+				'An Overview of the projects i have been workin on or worked on in the past',
+		},
+	}
+
 	return (
 		<>
+			<NextSeo {...seo} />
 			<h2 className={styles.projectsH2}>Projects</h2>
 			<div className={styles.description}>
 				<p>

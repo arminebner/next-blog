@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react'
-import Image from 'next/image'
 import IconsTitle from './IconsTitle'
 import MainTitle from './MainTitle'
 import styles from '../styles/Header.module.css'
@@ -32,11 +31,9 @@ const Header = () => {
 					</p>
 				</div>
 				<div className={styles.scroll}>
-					<Image
+					<img
+						style={{ height: '60px', width: '60px' }}
 						src='/icons/scroll.svg'
-						layout='fixed'
-						height={60}
-						width={60}
 						alt='mouse-scroll-down'
 					/>
 				</div>

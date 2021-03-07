@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import Image from 'next/image'
 import styles from '../styles/Posts.module.css'
 
 const Posts = ({ posts }) => {
@@ -13,11 +12,13 @@ const Posts = ({ posts }) => {
 								href='/post/[slug]'
 								as={`/post/${post.fields.slug}`}>
 								<div className={styles.previewImageContainer}>
-									<Image
+									<img
+										style={{
+											width: '100%',
+											height: '100%',
+										}}
 										className={styles.previewImage}
 										src={`https:${post.fields.headerImage.fields.file.url}`}
-										layout='fill'
-										priority
 									/>
 								</div>
 							</Link>

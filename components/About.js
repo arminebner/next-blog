@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import styles from '../styles/About.module.css'
 
 const About = () => {
@@ -11,11 +10,12 @@ const About = () => {
 						<div className={styles.textContent}>
 							<div className={styles.leftColumn}>
 								<div className={styles.portraitImg}>
-									<Image
+									<img
+										style={{
+											width: '200px',
+											height: '200px',
+										}}
 										src='/images/portrait-round-color.png'
-										layout='fixed'
-										width={200}
-										height={200}
 										alt='portrait of the site-author'
 									/>
 								</div>
@@ -67,178 +67,6 @@ const About = () => {
 										don't hesitate to get in touch ;)
 									</span>
 								</p>
-								<p>Technologies I currently learn / use:</p>
-								<div className={styles.iconSection}>
-									<div className={styles.category}>
-										<h4>For development</h4>
-										<div className={styles.icons}>
-											<div
-												className={
-													styles.iconContainer
-												}>
-												<Image
-													src='/icons/html5.svg'
-													layout='fixed'
-													width={40}
-													height={40}
-												/>
-											</div>
-											<div
-												className={
-													styles.iconContainer
-												}>
-												<Image
-													src='/icons/css3.svg'
-													layout='fixed'
-													width={40}
-													height={40}
-												/>
-											</div>
-											<div
-												className={
-													styles.iconContainer
-												}>
-												<Image
-													src='/icons/javascript.svg'
-													layout='fixed'
-													width={40}
-													height={40}
-												/>
-											</div>
-											<div
-												className={
-													styles.iconContainer
-												}>
-												<Image
-													src='/icons/react.svg'
-													layout='fixed'
-													width={40}
-													height={40}
-												/>
-											</div>
-											<div
-												className={
-													styles.iconContainer
-												}>
-												<Image
-													src='/icons/node-dot-js.svg'
-													layout='fixed'
-													width={40}
-													height={40}
-												/>
-											</div>
-											<div
-												className={
-													styles.iconContainer
-												}>
-												<Image
-													src='/icons/next-dot-js.svg'
-													layout='fixed'
-													width={40}
-													height={40}
-												/>
-											</div>
-										</div>
-									</div>
-									<div className={styles.category}>
-										<h4>For deployment</h4>
-										<div className={styles.icons}>
-											<div
-												className={
-													styles.iconContainer
-												}>
-												<Image
-													src='/icons/docker.svg'
-													layout='fixed'
-													width={40}
-													height={40}
-												/>
-											</div>
-											<div
-												className={
-													styles.iconContainer
-												}>
-												<Image
-													src='/icons/github_badge.svg'
-													layout='fixed'
-													width={40}
-													height={40}
-												/>
-											</div>
-											<div
-												className={
-													styles.iconContainer
-												}>
-												<Image
-													src='/icons/raspberrypi.svg'
-													layout='fixed'
-													width={40}
-													height={40}
-												/>
-											</div>
-											<div
-												className={
-													styles.iconContainer
-												}>
-												<Image
-													src='/icons/netlify.svg'
-													layout='fixed'
-													width={40}
-													height={40}
-												/>
-											</div>
-											<div
-												className={
-													styles.iconContainer
-												}>
-												<Image
-													src='/icons/heroku.svg'
-													layout='fixed'
-													width={40}
-													height={40}
-												/>
-											</div>
-										</div>
-									</div>
-									<div className={styles.category}>
-										<h4>Currently used OS</h4>
-										<div className={styles.icons}>
-											<div
-												className={
-													styles.iconContainer
-												}>
-												<Image
-													src='/icons/pop_os.svg'
-													layout='fixed'
-													width={40}
-													height={40}
-												/>
-											</div>
-											<div
-												className={
-													styles.iconContainer
-												}>
-												<Image
-													src='/icons/ubuntu.svg'
-													layout='fixed'
-													width={40}
-													height={40}
-												/>
-											</div>
-											<div
-												className={
-													styles.iconContainer
-												}>
-												<Image
-													src='/icons/windows.svg'
-													layout='fixed'
-													width={40}
-													height={40}
-												/>
-											</div>
-										</div>
-									</div>
-								</div>
 							</div>
 						</div>
 					</div>
