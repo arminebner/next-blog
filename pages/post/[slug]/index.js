@@ -36,6 +36,7 @@ const SinglePost = ({ post }) => {
 			<section className={styles.container}>
 				<div className={styles.headerImage}>
 					<img
+						style={{ width: '100%' }}
 						src={`https:${post.fields.headerImage.fields.file.url}`}
 					/>
 				</div>

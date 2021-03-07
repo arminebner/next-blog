@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import styles from '../styles/Footer.module.css'
 
 const Footer = () => {
@@ -7,20 +6,16 @@ const Footer = () => {
 			<div className={styles.footerContent}>
 				<div className={styles.contact}>
 					<a href='https://github.com/arminebner'>
-						<Image
+						<img
+							style={{ width: '30px', height: '30px' }}
 							src='/icons/github_badge.svg'
-							layout='fixed'
-							width={30}
-							height={30}
 							alt='github logo'
 						/>
 					</a>
 					<a href='https://www.linkedin.com/in/armin-ebner'>
-						<Image
+						<img
+							style={{ width: '30px', height: '30px' }}
 							src='/icons/linkedin-sharer.svg'
-							layout='fixed'
-							width={30}
-							height={30}
 							alt='linked-in logo'
 						/>
 					</a>
